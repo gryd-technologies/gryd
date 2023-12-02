@@ -18,12 +18,12 @@ body {
 }
 
 #logo {
-    position: fixed;
-    top: 100px;
+  position: fixed;
+  top: 100px;
 }
 
 svg {
-    opacity: 0;
+  opacity: 0;
 }
 
 #hero-main-text {
@@ -58,8 +58,21 @@ svg {
 }
 
 @keyframes full-opacity {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes move-logo {
+  0% {
+    top: 100px;
+  }
+  100% {
+    top: 45%;
+  }
 }
 
 .clarify-bg {
@@ -75,7 +88,15 @@ svg {
 }
 
 .make-it-appear {
-    animation-name: full-opacity;
+  animation-name: full-opacity;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+}
+
+.move-logo-down {
+  animation-name: move-logo;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
 }

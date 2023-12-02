@@ -2,7 +2,8 @@ const descomplicada = document.getElementById("descomplicada");
 const gestaoEmpresarial = document.getElementById("gestao-empresarial");
 const logo = document.getElementById("logo");
 const hero = document.getElementById("hero");
-const svgLogo = document.getElementsByTagName('svg')[0];
+const svgLogo = document.getElementsByTagName("svg")[0];
+const heroMainText = document.getElementById("hero-main-text");
 
 function firstAnimation() {
   descomplicada.classList.add("animate__hinge");
@@ -26,7 +27,7 @@ function changeFont() {
   descomplicada.style.fontFamily = "Urbanist";
   descomplicada.style.letterSpacing = "-1px";
   descomplicada.classList.remove("italic");
-  descomplicada.style.color = 'black';
+  descomplicada.style.color = "black";
 }
 
 function changeBackground() {
@@ -38,8 +39,19 @@ function changeColor(element) {
 }
 
 function appearLogo() {
-  svgLogo.classList.add('make-it-appear');
+  svgLogo.classList.add("make-it-appear");
+}
+
+function moveLogoDown() {
+  logo.classList.add("move-logo-down");
+}
+
+function removeFirstContent() {
+  heroMainText.classList.remove("animate__fadeInUp");
+  heroMainText.classList.add("animate__fadeOutDown");
+  moveLogoDown();
 }
 
 setTimeout(firstAnimation, 2000);
 setTimeout(secondAnimation, 5000);
+setTimeout(removeFirstContent, 8000);
