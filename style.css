@@ -19,7 +19,7 @@ body {
 
 #logo {
     position: fixed;
-    top: 20px;
+    top: 100px;
 }
 
 svg {
@@ -36,7 +36,7 @@ svg {
 
 #descomplicada {
   font-family: "Homemade Apple", cursive;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 @keyframes change-color {
