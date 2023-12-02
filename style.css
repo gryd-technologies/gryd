@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  overflow: hidden;
+}
+
+.bg-dark-blue {
+  background-color: #0097b2;
+}
+
+.italic {
+  font-style: italic;
+}
+
+#hero {
+  background: #212529;
+}
+
+#logo {
+    position: fixed;
+    top: 20px;
+}
+
+svg {
+    opacity: 0;
+}
+
+#hero-main-text {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  --animate-duration: 1.5s;
+  color: white;
+}
+
+#descomplicada {
+  font-family: "Homemade Apple", cursive;
+  font-size: 2.5rem;
+}
+
+@keyframes change-color {
+  0% {
+    color: white;
+  }
+  100% {
+    color: #0097b2;
+  }
+}
+
+@keyframes change-bg {
+  0% {
+    background: #212529;
+  }
+  100% {
+    background: #fff;
+  }
+}
+
+@keyframes full-opacity {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.clarify-bg {
+  animation-name: change-bg;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.make-it-blue {
+  animation-name: change-color;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.make-it-appear {
+    animation-name: full-opacity;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
