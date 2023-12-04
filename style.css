@@ -5,10 +5,6 @@ body {
   overflow: hidden;
 }
 
-.bg-dark-blue {
-  background-color: #0097b2;
-}
-
 .italic {
   font-style: italic;
 }
@@ -24,6 +20,36 @@ body {
 
 svg {
   opacity: 0;
+}
+
+#description {
+  font-size: 3em;
+  letter-spacing: 5px;
+  opacity: 0;
+  font-family: "Urbanist";
+}
+
+#main-logo {
+  opacity: 0;
+}
+
+#ver-mais {
+  opacity: 0;
+}
+
+.text-justify {
+  text-align: center;
+  hyphens: auto;
+}
+
+#diga-oi-title {
+  font-size: 2em;
+  font-weight: 400;
+  font-family: "Urbanist";
+}
+
+#img-diga-oi {
+  max-width: 80%;
 }
 
 #hero-main-text {
@@ -99,4 +125,61 @@ svg {
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
+}
+
+#content {
+  display: none;
+}
+
+#main-hero {
+  background-image: url("./public/svg/main-hero-background.svg");
+  /* width: 100dvw;
+  width: 100vw;
+  height: 100dvh;
+  height: 100vh; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#principais-recursos {
+  background: #0297b2;
+}
+
+#principais-recursos-title {
+  font-size: 2em;
+  font-family: "Urbanist", sans-serif;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+}
+
+#diga-oi-description {
+  font-family: "Urbanist", sans-serif;
+}
+
+.item-content {
+  color: white;
+}
+
+.item-number {
+  color: #0a1a44;
+}
+
+.item-number,
+.item-content {
+  background: #0a1a44;
+
+  font-family: "Urbanist", sans-serif;
+}
+
+.num {
+  background: #0297b2;
+  /* padding: 10px; */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
