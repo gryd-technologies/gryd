@@ -18,7 +18,7 @@ const elements = {
 //   ? confirm("Executar animações iniciais?")
 //   : true;
 
-const runAnimations = false;
+const runAnimations = true;
 
 function animate(element, ...animationClass) {
   element.classList.add(...animationClass);
