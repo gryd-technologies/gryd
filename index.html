@@ -105,11 +105,13 @@
           </div>
           <div class="row">
             <div class="col-12 d-flex justify-content-center">
-              <a href="#diga-oi"
-                ><button id="ver-mais" class="btn btn-light">
-                  Clique para conhecer
-                </button></a
+              <button
+                id="ver-mais"
+                onclick="elements.digaOi.scrollIntoView({block: 'start', behavior: 'smooth'})"
+                class="btn btn-light"
               >
+                Clique para conhecer
+              </button>
             </div>
           </div>
         </div>
@@ -121,7 +123,9 @@
         >
           <div class="row">
             <div class="col-12 text-center">
-              <div id="diga-oi-title" class="animate-on-scroll">Diga oi ao Gryd</div>
+              <div id="diga-oi-title" class="animate-on-scroll">
+                Diga oi ao Gryd
+              </div>
             </div>
           </div>
           <div class="row">
@@ -137,7 +141,10 @@
           </div>
           <div class="row d-flex justify-content-center">
             <div class="col-9">
-              <p id="diga-oi-description" class="text-justify animate-on-scroll">
+              <p
+                id="diga-oi-description"
+                class="text-justify animate-on-scroll"
+              >
                 Desenvolvido para simplificar, conectar e transformar a maneira
                 como você trabalha, Gryd é mais do que um aplicativo: é a sua
                 ferramenta essencial para eficiência, inovação e crescimento.
@@ -150,25 +157,64 @@
       </div>
 
       <div id="principais-recursos">
-        <div class="container vh-100 d-flex justify-content-evenly align-items-center flex-column">
+        <div
+          class="container vh-100 d-flex justify-content-evenly align-items-center flex-column"
+        >
           <div class="row">
-            <div id="principais-recursos-title" class="text-white text-center animate-on-scroll">Principais Recursos</div>
+            <div
+              id="principais-recursos-title"
+              class="text-white text-center animate-on-scroll"
+            >
+              Principais Recursos
+            </div>
           </div>
           <div class="row">
             <div class="item my-2 animate-on-scroll">
               <div class="item-number p-4"><div class="num">01</div></div>
               <div class="item-content text-justify p-2">
-                Gestão simplificada de pedidos, clientes, emissão de orçamentos e notas fiscais.</div>
+                Gestão simplificada de pedidos, clientes, emissão de orçamentos
+                e notas fiscais.
+              </div>
             </div>
             <div class="item my-2 animate-on-scroll">
               <div class="item-number p-4"><div class="num">02</div></div>
               <div class="item-content text-justify p-2">
-                Automações fundamentais para qualquer empreendimento, como um robô com canais de atendimento integrados a todas as plataformas.</div>
-            </div><div class="item my-2 animate-on-scroll">
+                Automações fundamentais para qualquer empreendimento, como um
+                robô com canais de atendimento integrados a todas as
+                plataformas.
+              </div>
+            </div>
+            <div class="item my-2 animate-on-scroll">
               <div class="item-number p-4"><div class="num">03</div></div>
               <div class="item-content text-justify p-2">
-                Gráficos de análise de fácil compreensão, adequados a qualquer nível de envolvimento com a gestão empresarial.</div>
+                Gráficos de análise de fácil compreensão, adequados a qualquer
+                nível de envolvimento com a gestão empresarial.
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="suporte-multiplataforma">
+        <div
+          class="container vh-100 d-flex justify-content-evenly align-items-center flex-column"
+        >
+          <div class="row">
+            <div
+              id="suporte-multiplataforma-title"
+              class="text-white text-center animate-on-scroll"
+            >
+              Suporte Multiplataforma
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-10 my-2 d-flex justify-content-center">
+              <img class="mockup-multi-plataforma animate-on-scroll" src="./public/img/mockup-3.png" alt="">
+            </div>
+            <div class="col-10 my-2 d-flex justify-content-center">
+              <img id="phone-multi" class="mockup-multi-plataforma animate-on-scroll" src="./public/img/mockup-2.png" alt="">
+            </div>
+            
           </div>
         </div>
       </div>

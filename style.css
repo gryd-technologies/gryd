@@ -39,6 +39,7 @@ svg {
 
 #ver-mais {
   opacity: 0;
+  font-family: "Urbanist";
 }
 
 .text-justify {
@@ -139,7 +140,7 @@ svg {
   background: #0297b2;
 }
 
-#principais-recursos-title {
+#principais-recursos-title, #suporte-multiplataforma {
   font-size: 2em;
   font-family: "Urbanist", sans-serif;
 }
@@ -173,4 +174,20 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#suporte-multiplataforma {
+  background: #394e7d;
+}
+
+#suporte-multiplataforma-title {
+  font-family: "Urbanist";
+}
+
+.mockup-multi-plataforma {
+  max-width: 80%;
+}
+
+#phone-multi {
+  max-width: 50%;
 }

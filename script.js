@@ -12,6 +12,7 @@ const elements = {
   mainLogo: document.getElementById("main-logo"),
   description: document.getElementById("description"),
   verMais: document.getElementById("ver-mais"),
+  digaOi: document.getElementById('diga-oi'),
 };
 
 // const runAnimations = developmentMode
