@@ -1,14 +1,18 @@
+/* Importação de fontes */
 @import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+/* Estilos gerais do corpo */
 body {
   font-family: "Open Sans", sans-serif;
   overflow: hidden;
 }
 
+/* Estilos específicos para texto em itálico */
 .italic {
   font-style: italic;
 }
 
+/* Estilos para a seção hero */
 #hero {
   background: #212529;
 }
@@ -65,6 +69,7 @@ svg {
   font-size: 2rem;
 }
 
+/* Animações */
 @keyframes change-color {
   0% {
     color: white;
@@ -101,42 +106,31 @@ svg {
   }
 }
 
+/* Classes de animação */
 .clarify-bg {
-  animation-name: change-bg;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
+  animation: change-bg 2s forwards;
 }
 
 .make-it-blue {
-  animation-name: change-color;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
+  animation: change-color 2s forwards;
 }
 
 .make-it-appear {
-  animation-name: full-opacity;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
+  animation: full-opacity 2s forwards;
 }
 
 .move-logo-down {
-  animation-name: move-logo;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-timing-function: ease-in-out;
+  animation: move-logo 2s forwards ease-in-out;
+  -webkit-animation: move-logo 2s forwards ease-in-out; /* Adicionando também para compatibilidade com o Safari */
 }
 
+/* Seção de conteúdo principal */
 #content {
   display: none;
 }
 
 #main-hero {
   background-image: url("./public/svg/main-hero-background.svg");
-  /* width: 100dvw;
-  width: 100vw;
-  height: 100dvh;
-  height: 100vh; */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -150,6 +144,7 @@ svg {
   font-family: "Urbanist", sans-serif;
 }
 
+/* Elementos animados ao rolar */
 .animate-on-scroll {
   opacity: 0;
 }
@@ -158,24 +153,20 @@ svg {
   font-family: "Urbanist", sans-serif;
 }
 
-.item-content {
+/* Estilos para itens de conteúdo */
+.item-content,
+.item-number {
   color: white;
+  background: #0a1a44;
+  font-family: "Urbanist", sans-serif;
 }
 
 .item-number {
   color: #0a1a44;
 }
 
-.item-number,
-.item-content {
-  background: #0a1a44;
-
-  font-family: "Urbanist", sans-serif;
-}
-
 .num {
   background: #0297b2;
-  /* padding: 10px; */
   border-radius: 50%;
   width: 40px;
   height: 40px;
